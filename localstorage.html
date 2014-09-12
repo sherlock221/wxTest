@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>测试微信本地存储</title>
+</head>
+<body>
+
+
+        测试
+    <input type="button" value="存储" id="btn"  onclick="bindTest();"/>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var v = localStorage.getItem("value");
+    alert(v);
+
+    var bindTest = function (){
+        localStorage.setItem("value","123");
+        alert("存储成功!");
+    };
+</script>
